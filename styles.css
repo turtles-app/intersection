@@ -1,0 +1,22 @@
+#intersection-pocket {
+	position: absolute;
+	display: inline-block;
+	height: 232px;
+	width: 600px;
+}
+#intersect1 {
+	position: absolute;
+	display: inline-block;
+	background-image: url("intersection-square2.png");
+	height: 232px;
+	width: 232px;
+}
+
+#intersect2 {
+	position: absolute;
+	display: inline-block;
+	background-image: url("intersection-square2.png");
+	height: 232px;
+	width: 232px;
+	left: 30%;
+}
