@@ -12,13 +12,14 @@ app.controller("intersectionController", ["$scope", "$rootScope", "data", functi
 		if ($scope.intersect.set1) data.sets.push($scope.intersect.set1);
 		data.intersectSet1 = data.sets.splice(parseInt(dragData.index), 1)[0];
 		$scope.intersect.set1 = data.intersectSet1;
+		if($scope.intersect.set2) $scope.intersect.opacity = .5;		
 		$scope.$apply();
 	}
 	this.dropSet2 = function () {
 		if ($scope.intersect.set2) data.sets.push($scope.intersect.set2);
 		data.intersectSet2 = data.sets.splice(parseInt(dragData.index), 1)[0];
 		$scope.intersect.set2 = data.intersectSet2;
-		$scope.intersect.opacity = .5;
+		if($scope.intersect.set1) $scope.intersect.opacity = .5;
 		$scope.$apply();
 	}
 
